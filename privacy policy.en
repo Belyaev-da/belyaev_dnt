@@ -1,0 +1,89 @@
+Privacy Policy
+Belyaev DNT Extension
+Version 5.8.0 · Effective date: August 12, 2026
+1. General provisions
+This Privacy Policy describes what data the Belyaev DNT browser extension (the "Extension") collects (or does not collect), how that data is used and stored, and what rights the user has regarding their data.
+Developer: Dmitry Belyaev
+Contact address: belyaev.pro@mail.ru
+Website: belyaev.expert
+2. Core principle: zero telemetry
+The Extension does not collect, transmit, or sell any personal user data. The Extension has no servers of its own for collecting data. All information processing happens locally, on the user's device.
+3. Data the Extension does not collect
+The Extension never collects or transmits to third parties:
+●	browsing history;
+●	the content of web pages;
+●	search queries;
+●	form input, passwords, or payment details;
+●	the user's IP address;
+●	geolocation;
+●	device identifiers;
+●	third-party site cookies;
+●	any analytics or behavioral data.
+4. Data stored locally on the user's device
+The Extension stores the following data exclusively in the browser's local storage (chrome.storage.local). This data never leaves the user's device:
+Data	Purpose of storage	Retention period
+Selected protection level (1-5)	Applying protection rules on every page load	Until changed by the user
+Per-site rules (domain + level)	Individual protection settings for specific sites	Until deleted by the user
+License key (encrypted with AES-GCM)	Verifying access rights to levels 3-5	Until deactivated or deleted
+Blocked tracker counter	Displaying statistics in the extension UI	Kept, trimmed to 200 entries
+Log of blocked domains	List of blocked trackers with dates	Kept, trimmed to 200 entries
+Cache of the external ad domain list	Supplementing the built-in blocking rules	Refreshed once a day
+Interface settings (theme, onboarding)	Saving user preferences	Until reset or the extension is removed
+Date of the last license reminder	Limiting notification frequency (no more than once a week)	Until the license expires
+5. The only outbound request - updating the ad domain list
+Once every 24 hours, the Extension automatically downloads a plain-text list of ad-network domains from the public resource pgl.yoyo.org (Peter Lowe's Ad and tracking server list - an open, free list widely used across the industry).
+Characteristics of this request:
+●	Only a plain-text list of domains (around 3,000 lines) is downloaded, not executable code.
+●	The request contains no user-identifying data (no IP in the headers, no cookies, no extension User-Agent).
+●	The data received is validated with a strict regular expression and stored locally.
+●	If the server is unavailable or returns malformed data, the Extension keeps working on its built-in lists without any errors.
+●	The user cannot be identified based on this request.
+The Extension makes no other requests to external servers.
+6. Browser permissions and how they are used
+The Extension requests the following Chrome/Opera permissions:
+Permission	What it's used for
+alarms	Periodic tasks: refreshing the domain list once a day, license expiration reminders, showing tips every 30 minutes.
+declarativeNetRequest	Blocking network requests to trackers and ad networks before they're sent. The content of requests is neither read nor stored.
+notifications	Showing a system notification about license expiration (no more than once a week, starting 30 days before expiry).
+scripting	Registering fingerprint-spoofing scripts in the page's main context (MAIN world) before the site's own scripts run.
+storage	Local storage of settings, statistics, and the license key on the user's device.
+tabs	Determining the current tab's domain to apply per-site protection rules. Page URLs are not stored.
+host_permissions (all sites)	The Extension needs to work on every site the user visits - fingerprint spoofing, tracker blocking and URL checking run on all pages.
+7. License key
+To access protection levels 3-5, the user enters a license key. Regarding this key:
+●	The key is stored in the browser's local storage in encrypted form (AES-GCM algorithm, Web Crypto API).
+●	Validity checking of the key is done locally (checksum, Crockford base32 format) - the key is not sent to the developer's servers.
+●	The key is never shared with third parties under any circumstances.
+●	The user can delete the key at any time through the Extension's interface.
+8. Children and minors
+The Extension is not directed at children under 13 and does not knowingly collect data from people in that age group. Since the Extension does not collect personal data in the first place, no special age-verification mechanisms are required.
+9. User rights
+At any time, the user has the right to:
+●	View all data stored by the Extension via "Settings" → "Export data".
+●	Delete all local data by removing the Extension from the browser - chrome.storage.local is cleared automatically on removal.
+●	Reset settings to defaults via the "Settings" section in the Extension's interface.
+●	Disable individual features (tips, notifications, address checking) in the Extension's settings.
+Since no data is transmitted to third-party servers, the right to data portability and the right to erasure are exercised purely locally - by removing the Extension.
+10. Third-party services
+The Extension interacts with exactly one third-party service:
+pgl.yoyo.org - a public list of ad-network domains (Peter Lowe's list).
+●	This resource provides only text data (a list of domains).
+●	The request contains no user identifiers.
+●	This resource's own privacy policy is available at pgl.yoyo.org.
+●	The Extension's code includes a commented-out extension point for connecting the Google Safe Browsing API v4 (online URL checking). It is disabled by default and is not activated without an explicit user action.
+11. Browser extension stores
+When the Extension is installed via the Chrome Web Store or Opera Addons, the store may collect its own installation and usage statistics in accordance with its own privacy policy (Google's or Opera's). The Extension's developer receives no personal user data from these platforms and has no control over data collected by the platforms themselves.
+12. Data security
+Since no personal data is collected or transmitted, the main risks to user privacy relate to the browser's local storage. AES-GCM encryption (Web Crypto API) is used to protect the license key. Access to local storage is restricted by browser policies.
+13. Changes to this Policy
+For material changes to this Policy, the developer will update the effective date in the document header and publish the new version on the Extension's store page. Continued use of the Extension after an update means acceptance of the new Policy.
+14. Contact information
+For questions related to this Privacy Policy, contact:
+Dmitry Belyaev
+Email: belyaev.pro@mail.ru
+Website: belyaev.expert
+
+This document was prepared based on an analysis of the Belyaev DNT v5.8.0 extension's source code.
+© 2026 Dmitry Belyaev. All rights reserved.
+
+Note: this English text is a translation provided for convenience. The Russian original is the governing version of this Policy.
