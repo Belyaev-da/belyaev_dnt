@@ -1,0 +1,12 @@
+Google Chrome:
+1. In the address bar, open: chrome://extensions
+2. Turn on "Developer mode" in the top right corner
+3. Click "Load unpacked"
+4. Select the folder for the specific version: "belyaev-dnt"
+
+
+Yandex Browser:
+1. In the address bar, open: browser://extensions
+2. Turn on "Developer mode" in the top right corner
+3. Click "Load unpacked"
+4. Select the folder for the specific version: "belyaev-dnt"
