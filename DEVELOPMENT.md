@@ -83,7 +83,7 @@ notice.js              Карточка «что закрыла защита»
 tips.js                Советы каждые 30 минут
 passwordtips.js        Подсказки на полях пароля
 cookieconsent.js       ISOLATED: находит cookie-баннер, проверяет состояние
-formguard-main.js      MAIN: перехват.value форм до отправки (детект)
+formguard-main.js      MAIN: перехват .value форм до отправки (детект)
 formguard.js           ISOLATED: проверка состояния защиты + UI уведомления
 test.html / test.js    Страница самопроверки (открывается из "О расширении")
 popup/                 Интерфейс (onboarding, dark theme)
@@ -189,8 +189,8 @@ Per-site правила: каждому домену назначается св
 3. **ZIP-архив.** Именно содержимое папки расширения без лишних файлов:
    ```
    cd belyaev-dnt
-   zip -r../belyaev-dnt.zip. -x "*.DS_Store" "README*" "*.md"
- ```
+   zip -r ../belyaev-dnt.zip . -x "*.DS_Store" "README*" "*.md"
+   ```
 
 ### Публикация
 
