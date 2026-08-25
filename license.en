@@ -1,0 +1,232 @@
+# Belyaev DNT License
+
+> **Version:** 5.8
+> **Effective date:** August 18, 2026
+> **Status:** proprietary license with free basic functionality
+
+---
+
+## 1. General provisions
+
+This license (the "**License**") sets out the terms of use of the
+**Belyaev DNT** software, including its source code, browser extensions,
+compiled files, documentation, configurations, rules, lists, design,
+graphic materials and all other related components hosted in the
+project's repository (collectively, the "**Software**").
+
+**Rights holder:** Dmitry Alexandrovich Belyaev (hereinafter the
+"**Rights Holder**").
+
+By using, copying, installing, modifying, distributing or otherwise
+interacting with the Software, you confirm that you have read, understood
+and fully accept the terms of this License. If you do not agree with any
+term, do not use the Software.
+
+---
+
+## 2. Purpose
+
+Belyaev DNT is designed to improve users' privacy and security while
+using the Internet, including limiting digital tracking, unwanted
+advertising, trackers, potentially dangerous links, pop-up windows and
+other web threats.
+
+> The Software does not guarantee absolute anonymity, confidentiality,
+> security, freedom from tracking, or protection against all types of
+> cyber threats.
+
+---
+
+## 3. Free basic license
+
+Subject to the terms of this License, the Rights Holder grants you a
+**royalty-free**, limited, non-exclusive, non-transferable,
+non-sublicensable and revocable license to:
+
+- download, install and use the **basic functionality** of the Software
+ for personal, educational, research, professional and internal
+ organizational purposes;
+- study the Software's source code;
+- create source code modifications for personal, research or
+ educational use;
+- fork the repository, provided that all copyright notices, the text of
+ this License, and attribution to the original project are preserved.
+
+Basic functionality is provided free of charge, in the scope and
+composition determined by the Rights Holder. The Rights Holder may change
+the composition, availability, limitations and terms of use of the basic
+functionality.
+
+---
+
+## 4. Paid and commercial features
+
+Extended, professional, enterprise, commercial, paid, or other
+functionality not classified by the Rights Holder as basic **is not
+granted** under this License.
+
+To obtain the right to use such features, a separate written agreement
+with the Rights Holder must be concluded in advance.
+
+### Commercial inquiries
+
+For questions about purchasing licenses, enabling additional features,
+enterprise deployment, integration, customization, technical support,
+audits and consulting services, contact:
+
+- **Rights Holder:** Dmitry Alexandrovich Belyaev
+- **E-mail:** [belyaev.pro@mail.ru](mailto:belyaev.pro@mail.ru)
+- **Website:** [belyaev.expert](https://belyaev.expert/)
+
+Until a separate agreement is concluded, it is prohibited to:
+
+- obtain, activate, reproduce, use or attempt to use paid features in
+ any way;
+- bypass technical, software, licensing, organizational or other
+ restrictions on access to extended functionality;
+- use the basic version as part of a commercial service, product, SaaS
+ platform or paid offering without the Rights Holder's written
+ permission;
+- provide third parties with access to the Software or its functionality
+ for a fee, compensation, or other commercial benefit;
+- present a modified or derivative version as official, certified,
+ supported or approved by the Rights Holder.
+
+---
+
+## 5. Restrictions
+
+Without the Rights Holder's prior written permission, it is prohibited to:
+
+- sell, rent, transfer, license, sublicense, publish, distribute, or
+ otherwise commercialize the Software or any part of it;
+- use the Software to provide paid services, resell it, grant third-party
+ access, or extract commercial benefit directly from distributing or
+ providing the Software;
+- remove, hide, alter, or replace copyright, trademark, or authorship
+ notices, License terms, or other notices from the Rights Holder;
+- use the name **Belyaev DNT**, the Rights Holder's name, logos, brand
+ elements or project identifiers for advertising, promotion, or to
+ create an impression of partnership, endorsement, or official support,
+ without the Rights Holder's written permission;
+- use the Software in violation of applicable law, third-party rights,
+ the rules of internet platforms, or the terms of this License;
+- use the Software for unauthorized access, circumventing lawful
+ restrictions, causing harm to information systems, violating third
+ parties' privacy, or any other unlawful activity.
+
+---
+
+## 6. Modifications and derivative works
+
+You may create modifications of the source code to the extent expressly
+permitted by Section 3 of this License.
+
+When publishing a fork or modification, you must:
+
+- clearly state that such a version is an **unofficial modification**;
+- retain the original copyright notices and the full text of this
+ License;
+- not use the **Belyaev DNT** name in the derivative product's name in a
+ way that creates the impression of official status, ownership by the
+ Rights Holder, or support from the Rights Holder;
+- not state or imply that the Rights Holder is responsible for the
+ modified version.
+
+Distribution of modifications, derivative works, or builds for
+commercial purposes is permitted only under a separate written agreement
+with the Rights Holder.
+
+---
+
+## 7. Intellectual property rights
+
+All exclusive rights, copyrights, and other intellectual property rights
+in the Software, including its source code, architecture, documentation,
+design, names, graphic materials and other elements, belong to the
+Rights Holder or the respective rights holders.
+
+This License does not transfer any exclusive rights, does not grant any
+trademark rights, and does not permit use of the Rights Holder's
+materials beyond the terms expressly set out herein.
+
+---
+
+## 8. No warranty
+
+The Software is provided **"AS IS"** and **"AS AVAILABLE"**, without any
+warranties of any kind, whether express, implied, statutory, or otherwise.
+
+The Rights Holder does not warrant that the Software:
+
+- will operate uninterrupted, error-free, and securely;
+- will be compatible with all devices, browsers, operating systems,
+ websites, networks and services;
+- will provide complete protection against malware, phishing, trackers,
+ data leaks, advertising, fraud, unauthorized access, or other threats.
+
+The user is solely responsible for backing up data, verifying
+compatibility, configuring protective measures, and the consequences of
+using the Software.
+
+---
+
+## 9. Limitation of liability
+
+To the maximum extent permitted by applicable law, the Rights Holder
+shall not be liable for any direct, indirect, incidental, special,
+punitive, or consequential damages, including loss of data, profits,
+goodwill, or access to services, reduced performance, or impaired
+operation of information systems, arising from the use or inability to
+use the Software.
+
+If applicable law does not permit a full exclusion of liability, the
+Rights Holder's liability is limited to the minimum extent permitted by
+such law.
+
+---
+
+## 10. Termination of the license
+
+This License terminates automatically if you breach any of its terms.
+
+Upon termination of the License, you must immediately stop using the
+Software, delete all copies of it, and stop distributing any builds and
+modifications you have created, if required by the Rights Holder or by
+applicable law.
+
+The Rights Holder may revoke the granted license by notifying the user
+via the project's repository, official website, e-mail, or any other
+available communication channel.
+
+---
+
+## 11. Governing law
+
+This License is governed by the law of the country in which the Rights
+Holder conducts its activities, unless otherwise provided by a separate
+written agreement between the Rights Holder and the user, or by
+mandatory provisions of applicable law.
+
+---
+
+## 12. Contact
+
+For questions about licensing, commercial use, paid features, enterprise
+deployment, integration and support:
+
+| Detail | Value |
+|---|---|
+| Rights Holder | Dmitry Alexandrovich Belyaev |
+| E-mail | [belyaev.pro@mail.ru](mailto:belyaev.pro@mail.ru) |
+| Website | [https://belyaev.expert/](https://belyaev.expert/) |
+
+---
+
+Use of the Software constitutes full and unconditional acceptance of this
+License.
+
+---
+
+**Note:** this English text is a translation provided for convenience.
+The Russian original is the governing version of this License.
