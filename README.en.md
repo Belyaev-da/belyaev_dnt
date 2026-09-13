@@ -28,9 +28,9 @@ belyaev-dnt-v5.9.3 (chrome-yandex-opera).zip
 
 | Algorithm | Hash |
 |---|---|
-| SHA-1 | `21669364ea35b5c5b607eca8e34a56754724349f` |
-| SHA-256 | `ecde17afea660013b779a8dcaf4cfc07dd121e3a2f5fd98329085167caccc91b` |
-| SHA-512 | `7e7642e25e13227e178d6b71d8f4476ae6bbe1d33d770d9bf4ff45da786b3705d96f7679979ca436b3124fd69a8a76564e8284c492c7ded097e309ae71de74bf` |
+| SHA-1 | `1efbae83ad1089827690db4147c22df045caef8b` |
+| SHA-256 | `c17f60769b13b77709709551ea480483c38aa7887b64be0ce5a721f9689604de` |
+| SHA-512 | `54edf1ff86d113291658d52ccf03cc8bf7c7d234d3396eadb7386b4acc4500f916643b70c0f04256db4de3e37a4a8eed163cd6b486eb34a23986c9bd97edeb1b` |
 
 > To verify file integrity and authenticity, it's recommended to use **SHA-256** or **SHA-512**.
 
