@@ -15,13 +15,13 @@ It's not just an ad blocker. Belyaev DNT combines several layers of protection i
 Belyaev DNT works locally in the browser and doesn't require complex setup. The user gets a clear protection status indicator, a counter of blocked elements and warnings only when there's an actual risk.
 <img width="1503" height="639" alt="image" src="https://github.com/user-attachments/assets/858e6f18-44af-47ac-8425-c9b2af7b586c" />
 
-## 📦 Release `belyaev-dnt-v5.9.2`
+## 📦 Release `belyaev-dnt-v5.9.3`
 
 **Compatibility:** Google Chrome · Yandex Browser · Opera
 **Archive size:** 124 KB
 
 ```text
-belyaev-dnt-v5.9.2 (chrome-yandex-opera).zip
+belyaev-dnt-v5.9.3 (chrome-yandex-opera).zip
 ```
 
 ### Checksums

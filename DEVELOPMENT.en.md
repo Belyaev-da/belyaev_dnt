@@ -3,7 +3,7 @@
 Extension for Chrome, Yandex Browser and Opera: protection from digital
 tracking, ad and tracker blocking, website address checking.
 
-**Version:** 5.9.2 · **Manifest V3** · ~290 KB · no bundlers or dependencies
+**Version:** 5.9.3 · **Manifest V3** · ~290 KB · no bundlers or dependencies
 
 **Author:** Dmitry Belyaev · belyaev.pro@mail.ru · [belyaev.expert](https://belyaev.expert)
 
@@ -265,6 +265,38 @@ Opera is Chromium-based, so **the same ZIP** works without changes.
 ---
 
 ## Version history
+
+### 5.9.3 - fixed frequent license re-activation
+
+License holders reported activation "dropping" for no visible reason,
+requiring the code to be re-entered. Investigated and fixed:
+
+- **License storage key depended on `navigator.userAgent`.** The browser's
+ UA string contains its version number (`Chrome/128.0.0.0` etc.), which
+ changes on every Chrome/Yandex/Opera auto-update. `deviceKey()` in
+ `lib/license.js` derived its AES-GCM encryption key from that string —
+ after a browser auto-update the key changed, decrypting the previously
+ stored code (`background.js`, `getLicenseStatus()`) failed, and the
+ extension treated the license as missing. Fixed: the key material is now
+ a random secret generated once on first activation and stored in
+ `chrome.storage.local`; it no longer depends on browser/OS version. For
+ the same reason `deviceHash()` (the device identifier used for the
+ server-side 5-device limit) was also unstable — it now uses the same
+ stable secret.
+- **Hardened offline license-check trust** against abuse from a
+ permanently unreachable activation server — offline trust is now
+ time-bounded rather than indefinite (normal short network outages, which
+ offline mode exists for, are unaffected).
+- **`test.html` was unnecessarily declared in `web_accessible_resources`**
+ (accessible to any website), even though it's only ever opened from the
+ extension's own popup (`chrome.tabs.create`) — this let web pages detect
+ that the extension is installed (extension fingerprinting). The
+ declaration was removed from `manifest.json`.
+
+**Migration:** existing installs have their stored license code encrypted
+with the old (userAgent-based) key, which the new key cannot decrypt — on
+first run after updating, the code needs to be re-entered once; the
+re-activation issue should not recur afterward.
 
 ### 5.9.2 - fingerprint spoofing restored and bugfixes
 

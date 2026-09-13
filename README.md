@@ -15,13 +15,13 @@
 Belyaev DNT работает локально в браузере и не требует сложной настройки. Пользователь получает понятный индикатор состояния защиты, счётчик заблокированных элементов и предупреждения только тогда, когда действительно возникает риск.
 <img width="1503" height="639" alt="image" src="https://github.com/user-attachments/assets/858e6f18-44af-47ac-8425-c9b2af7b586c" />
 
-## 📦 Релиз `belyaev-dnt-v5.9.2`
+## 📦 Релиз `belyaev-dnt-v5.9.3`
 
 **Совместимость:** Google Chrome · Яндекс Браузер · Opera
 **Размер архива:** 124 KB
 
 ```text
-belyaev-dnt-v5.9.2 (chrome-yandex-opera).zip
+belyaev-dnt-v5.9.3 (chrome-yandex-opera).zip
 ```
 
 ### Контрольные суммы

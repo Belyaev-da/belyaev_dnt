@@ -3,6 +3,29 @@
 Short version for this specific release. Full version history is in
 [DEVELOPMENT.md](DEVELOPMENT.md#version-history).
 
+## 5.9.3 (2026-09-14) - fixed frequent license re-activation
+
+### Fixed in this release
+
+1. **License frequently "dropped" and required re-activation.** Cause: the
+ internal license storage key depended on the browser's User-Agent string,
+ which changes on every Chrome/Yandex/Opera auto-update. After such an
+ update the previously saved license stopped being recognized and the
+ plugin fell back to the free tier. Storage no longer depends on browser
+ version and survives auto-updates. → `lib/license.js`
+2. **Hardened license verification against prolonged activation-server
+ outages** - offline trust is now time-bounded instead of indefinite.
+ → `lib/license.js`, `background.js`
+3. **Reduced the extension's fingerprinting surface.** The self-test page
+ (`test.html`) was unnecessarily declared accessible to any website,
+ letting web pages detect that the extension is installed. It's only ever
+ opened from the extension's own UI - the unneeded declaration was removed.
+ → `manifest.json`
+
+**Important for existing installs:** after updating, you'll need to
+re-enter your activation code once (storage format migration) - the
+re-activation issue should not recur afterward.
+
 ## 5.9.2 (2026-08-18) - "chrome-yandex-opera" build, verified and packaged
 
 This is the first version built as an install-ready package. The `5.9.2`
